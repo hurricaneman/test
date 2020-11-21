@@ -1,0 +1,42 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./img/bg2.png');
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .title {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+  }
+  .en {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+  }
+  .loginBox {
+    width: 450px;
+    padding: 40px;
+    border-radius: 5px;
+    background-color: white;
+    .text {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .image {
+      width: 100%;
+      height: 40px;
+    }
+    .flogetPwdMain {
+      display: flex;
+      justify-content: flex-end;
+      .flogetPwd {
+        display: block;
+        margin-top: 10px;
+      }
+    }
+  }
+}

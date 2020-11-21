@@ -1,0 +1,12 @@
+{
+  "window.title": "${rootName}",
+  "editor.tabSize": 2,
+  "editor.rulers": [80],
+  "typescript.validate.enable": false,
+  "javascript.validate.enable": true,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "cSpell.words": ["Popconfirm", "antd", "checkres"]
+}

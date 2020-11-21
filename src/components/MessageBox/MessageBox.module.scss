@@ -1,0 +1,49 @@
+.messageBox {
+  display: flex;
+  justify-content: space-between;
+  > div {
+    display: flex;
+    > span {
+      display: block;
+      white-space: nowrap;
+    }
+    > span:last-child {
+      margin-left: 6px;
+    }
+  }
+  > div:nth-child(3) > span:last-child {
+    white-space: normal;
+    max-width: 300px;
+  }
+}
+.box {
+  cursor: pointer;
+  width: 44px;
+  img: {
+    width: 100%;
+  }
+}
+.box:hover {
+  opacity: 0.8;
+}
+.high {
+  > div {
+    > span {
+      color: #f2596d;
+    }
+  }
+}
+.middle {
+  > div {
+    > span:first-child {
+      color: #ff8236;
+    }
+  }
+}
+.low {
+  > div {
+    > span:first-child {
+      color: #4990e2;
+    }
+  }
+}

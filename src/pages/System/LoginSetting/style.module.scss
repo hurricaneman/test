@@ -1,0 +1,46 @@
+.box {
+  margin-top: 12px;
+  width: 500px;
+  .imgbox {
+    margin-top: 20px;
+    height: 225px;
+    width: 400px;
+    position: relative;
+    .zz {
+      width: 400px;
+      height: 225px;
+      background-color: rgba(0, 0, 0, 0.45);
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: flex;
+      opacity: 0;
+      justify-content: center;
+      align-items: center;
+      z-index: 99;
+      transition: all 0.5s ease;
+      .icon {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 24px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        :hover {
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+    &:hover {
+      .zz {
+        opacity: 1;
+      }
+    }
+    .img {
+      width: 400px;
+      display: block;
+      height: 225px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}

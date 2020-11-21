@@ -1,0 +1,60 @@
+.headerButton {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.headerButton:hover {
+  background: rgba(0, 0, 0, 0.025);
+}
+
+.menu::-webkit-scrollbar,
+.menu *::-webkit-scrollbar {
+  width: 0px;
+  background-color: #3a4d6d;
+  border-radius: 5px;
+}
+
+.menu::-webkit-scrollbar-thumb,
+.menu *::-webkit-scrollbar-thumb {
+  background: rgb(104, 255, 125);
+  border-radius: 5px;
+}
+
+.shrink {
+  display: inline-block;
+  position: absolute;
+  width: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -10px;
+  height: 80px;
+  line-height: 50px;
+  cursor: pointer;
+  padding: 15px 0;
+  font-size: 12px;
+  border-radius: 0 10px 10px 0;
+}
+
+.headerMenuSub {
+  display: inline-block;
+  height: 64px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 22px;
+  cursor: pointer;
+  font-size: 12px;
+  &.active {
+    background: linear-gradient(
+      180deg,
+      rgba(61, 77, 95, 1) 0%,
+      rgba(61, 77, 95, 1) 0%,
+      rgba(39, 50, 61, 1) 100%,
+      rgba(39, 50, 61, 1) 100%
+    );
+    color: var(--PC);
+  }
+}
